@@ -1,0 +1,156 @@
+.product .container{
+    width: 80%;
+    margin: 5% auto;
+}
+
+.product .container::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.product .container .col{
+    width: 50%;
+    float: left;
+}
+.product .container .col img{
+    width: 100%;
+    height: 60vh;
+    object-fit: scale-down;
+}
+.product .container .col h1{
+    margin-bottom: 1%;
+}
+.product .container .col p{
+    margin-bottom: 1%;
+    font-size: 1.2em;
+}
+
+.product .container .col .fas{
+    color: #FFD700;
+    margin-bottom: 1%;
+}
+.product .container .col button{
+    padding: 2%;
+    background-color: #2e6ed5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    margin-bottom: 1%;
+}
+.product .container .col button:hover{
+    color: #2e6ed5;
+    background-color: transparent;
+    border: #2e6ed5 3px solid;
+}
+.product .container .col .delivery{
+    width: 100%;
+    color: white;
+    padding: 3%;
+    border-radius: 5px;
+}
+.product .container .col .delivery.on-stock{
+    background-color: green;
+}
+.product .container .col .delivery.no-stock{
+    background-color: orange;
+    color: black;
+}
+.product .container .col .delivery.no-no-stock{
+    background-color: red;
+    color: white;
+}
+.product .container .col .fa-check-circle{
+    color: green;
+}
+
+/* Detail section */
+
+.details .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.details .container .toggler{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+.details .container .toggler button{
+    background-color: #f2f2f2;
+    border: none;
+    padding: 1%;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.details .container .toggler .active{
+    background-color: #2e6ed5;
+    color: white;
+    display: block;
+}
+.details .container .description{
+    width: 80%;
+    margin: 0 auto;
+}
+.details .container .properties{
+    margin: 0 auto;
+}
+.details .container .properties tr:nth-child(odd){
+    width: 300px;
+    background-color: #f2f2f2;
+}
+.details .container .properties tr:nth-child(even){
+    width: 300px;
+    background-color: white;
+}
+
+.details .container .properties td:nth-child(odd){
+    
+    width: 300px;
+    font-size: 1.3em;
+}
+.details .container .properties td:nth-child(even){
+    width: 300px;
+    font-size: 1.3em;
+}
+
+.reviews{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.reviews .fa-user-circle{
+    font-size: 30px;
+}
+.reviews .reviewerName{
+    font-size: 1.2em;
+}
+.reviews .rating{
+    padding: 2%;
+    border: 0.5px solid #777;
+    border-radius: 10px;
+    margin: 1% auto;
+}
+
+.reviews .rating .fa-star,
+.fa-star-half-alt{
+    color: #FFD700;
+}
+.reviews .rating .comment{
+    display: block;
+    font-size: 1.1em;
+}
+
+.recommended-products .container{
+    width: 80%;
+    margin: 0 auto;
+}
+.recommended-products .container .card{
+    width: 25%;
+}
+.recommended-products .container .card img{
+    width: 100%;
+}
